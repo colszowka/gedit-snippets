@@ -90,6 +90,12 @@ h2. Copyright
 
 _gedit-snippets_ is Copyright (C) 2009 Christoph Olszowka <christoph at olszowka dot de>, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file. 
 
+accessories-text-editor icon used in gnome-snippets-logo taken from the "Tango project":tango, licensed under the "Creative Commons Attribution Share-Alike license":cc. gnome-snippets-logo licensed under "Creative Commons Attribution Share-Alike license":cc
+
+CodeRay coloring theme for cheatsheet by "Ryan Bates":http://railscasts.com/episodes/46
+
 
 [gedit]http://projects.gnome.org/gedit/
 [snippets]http://live.gnome.org/Gedit/Plugins/Snippets
+[tango]http://tango.freedesktop.org
+[cc]http://creativecommons.org/licenses/by-sa/2.5/
