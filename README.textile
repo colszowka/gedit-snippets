@@ -1,0 +1,2 @@
+h1. gedit-snippets
+_Ruby, Rails and RHTML snippets for the gedit Snippets plugin_
