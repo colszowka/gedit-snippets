@@ -1,4 +1,4 @@
-h1. gedit-snippets
+p=. !http://github.com/colszowka/gedit-snippets/raw/master/doc/gedit-snippets-logo.png(gedit-snippets)!
 
 _Ruby, Rails and RHTML snippets for the gedit "Snippets":snippets plugin_
 
