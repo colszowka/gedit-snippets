@@ -1,0 +1,31 @@
+%html
+  %head
+    %title gedit-snippets Documentation
+    %style{:type => 'text/css'}= css
+
+  %body
+    #header
+      %h1 gedit-snippets Documentation
+      %ul
+        - snippets.each do |section, snips|
+          %li
+            %a{:href => "\##{section}"}= section
+
+    .sections
+    - snippets.each do |section, snips|
+      .section
+        %a{:name => section}
+        %h2= section
+        - snips.each do |snip|
+          .snippet
+            %h4= snip.tag + " - " + snip.description
+            .code
+              - if snip.text =~ /<%/ or snip.text =~ /<[\w]+>/i
+                %pre= CodeRay.scan(snip.text, :rhtml).div(:wrap => nil, :css => :class)
+              - else
+                %pre= CodeRay.scan(snip.text, :ruby).div(:wrap => nil, :css => :class)
+
+    #footer
+      %p <code>gedit-snippets</code> is Copyright (C) 2009 Christoph Olszowka <christoph at olszowka dot de>, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file. 
+      %p You can find the project on <a href="http://github.com/colszowka/gedit-snippets">github</a> and on my <a href="http://blog.olszowka.de">blog</a>
+      %p= "This documentation generated on " + Time.now.to_s

@@ -18,7 +18,11 @@ After that, you can either put all the xml files from the <code>snippets/</code>
 
 After putting the files into one of these directories, they should become available automatically when editing .rb files.
 
-h2. Problems
+h2. Documentation
+
+Have a look into the "cheatsheet":http://github.com/colszowka/gedit-snippets/tree/master/cheatsheet.html
+
+h2. Known Issues
 
 Unfortunately, the Snippets plugin is entirely based upon mime types, so there is no way of making, i.e., ActiveRecord validation snippets only available in Rails models based upon path. 
 
