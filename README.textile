@@ -1,6 +1,6 @@
 h1. gedit-snippets
 
-_Ruby, Rails and RHTML snippets for the gedit Snippets plugin_
+_Ruby, Rails and RHTML snippets for the gedit "Snippets":snippets plugin_
 
 This is a collection of code snippets that I am using in my favorite editor, "gedit":gedit.
 
@@ -14,9 +14,52 @@ On a default install, the snippets will be stored in <code>/usr/share/gedit-2/pl
 sudo rm /usr/share/gedit-2/plugins/snippets/ruby.xml
 </pre>
 
+After that, you can either put all the xml files from the <code>snippets/</code> directory in this package into mentioned directory, or store them in your home directory in <code>~/.gnome2/gedit/snippets</code>, which probably is the preferred option.
+
+After putting the files into one of these directories, they should become available automatically when editing .rb files.
+
+h2. Problems
+
+Unfortunately, the Snippets plugin is entirely based upon mime types, so there is no way of making, i.e., ActiveRecord validation snippets only available in Rails models based upon path. 
+
+The effect of this is that you will have all snips defined for Ruby files available in every .rb-file you are editing, even if the inclusion doesn't make sense at all in this particular file. My apologies for that!
+
+I once mailed the author of the plugin, "Jesse van den Kieboom ":http://www.icecrew.nl/~jesse/, about that issue, but unfortunately he does not work on the plugin any more. If anyone is into Python, a path-based snippet enabler patch for the "plugin":snippets would be greatly appreciated!
+
+h2. Style guide
+
+This is a rough list of rules that I use when updating the snips.
+
+h3. 1. Multi-word method or symbol names are abbreviated with the first letter of each word
+
+Examples:
+<pre>
+validates_presence_of => vpo
+:wrong_length => wl
+</pre>
+
+h3. 2. Single-word method or symbol names are not abbreviated
+
+h3. 3. For block methods, the original method name is to be used for the {} form, while an appended "o" behind the method name stands for the mulit-line do..end style
+
+Examples:
+
+<pre>
+each {|item| puts item} => each
+</pre>
+
+<pre>
+each do |item|
+  ...
+end => eacho
+</pre>
+
+h3. 4. The description should feature a short form of the included code as well as an optional comment, maybe even from an official RDoc document.
+
 h2. Copyright
 
-_gedit-snippets_ is Copyright (C) 2009 Christoph Olszowka, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file. 
+_gedit-snippets_ is Copyright (C) 2009 Christoph Olszowka <christoph at olszowka dot de>, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file. 
 
 
 [gedit]http://projects.gnome.org/gedit/
+[snippets]http://live.gnome.org/Gedit/Plugins/Snippets
