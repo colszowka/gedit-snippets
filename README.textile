@@ -18,6 +18,12 @@ After that, you can either put all the xml files from the <code>snippets/</code>
 
 After putting the files into one of these directories, they should become available automatically when editing .rb files.
 
+If you want to automate the download, you can execute the following command, which will retrieve the latest revision from github as a tarball and extract it into the snippets directory in your home:
+
+<pre>
+wget -nv http://github.com/colszowka/gedit-snippets/tarball/master -O- | tar xzv -C ~/.gnome2/gedit/ --strip 1
+</pre>
+
 h2. Documentation
 
 Have a look into the "cheatsheet":http://github.com/colszowka/gedit-snippets/tree/master/cheatsheet.html
