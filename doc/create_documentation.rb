@@ -43,6 +43,7 @@ Dir.entries(File.join(File.dirname(__FILE__), '..', 'snippets/')) .each do |file
   end
 end
 
+# Generate the HTML with a little help from haml and sass
 File.open(File.join(File.dirname(__FILE__), '..', 'cheatsheet.html'), "w+") do |file|
   haml = Haml::Engine.new(File.read(File.join(File.dirname(__FILE__), 'documentation_template.haml')))
   css = Sass::Engine.new(File.read(File.join(File.dirname(__FILE__), 'documentation_stylesheet.sass')))

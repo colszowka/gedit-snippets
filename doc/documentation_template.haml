@@ -1,18 +1,22 @@
 %html
   %head
     %title gedit-snippets Documentation
-    %style{:type => 'text/css'}= css
+    %style{:type => 'text/css', :media => 'screen'}= css
 
   %body
     #header
       %h1 gedit-snippets Documentation
       %ul
-        - snippets.each do |section, snips|
+        - snippets.sort.each do |data|
+          - section = data[0]
+          - snips = data[1]
           %li
             %a{:href => "\##{section}"}= section
 
     .sections
-    - snippets.each do |section, snips|
+    - snippets.sort.each do |data|
+      - section = data[0]
+      - snips = data[1]
       .section
         %a{:name => section}
         %h2= section
