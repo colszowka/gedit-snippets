@@ -4,4 +4,4 @@ _Ruby, Rails and RHTML snippets for the gedit Snippets plugin_
 
 h1. Copyright
 
-<code>gedit-snippets</code> is Copyright (C) 2009 Christoph Olszowka, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file. 
+_gedit-snippets_ is Copyright (C) 2009 Christoph Olszowka, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file. 
