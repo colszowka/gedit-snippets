@@ -1,0 +1,39 @@
+<!--
+    Ruby, Rails and RHTML snippets for the gedit Snippets plugin
+    http://github.com/colszowka/gedit-snippets/
+
+    gedit-snippets is Copyright (c) 2009 Christoph Olszowka, http://blog.olszowka.de
+-->
+
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="xml">
+  <snippet>
+    <text><![CDATA[<snippet>
+  <text><![CDATA[$1]]]]><![CDATA[></text>
+  <tag>$2</tag>
+  <description>$3</description>
+</snippet>$0]]></text>
+    <tag>snip</tag>
+    <description>New snippet</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<?xml version='1.0' encoding='utf-8'?>
+<snippets language="${1:ruby}">
+	$0
+</snippets>]]></text>
+    <tag>snippets</tag>
+    <description>New snippet</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<!-- $1 -->$0]]></text>
+    <tag>c</tag>
+    <description>Short Comment</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<!--
+		$1
+-->$0]]></text>
+    <tag>lc</tag>
+    <description>Long comment</description>
+  </snippet>
+</snippets>

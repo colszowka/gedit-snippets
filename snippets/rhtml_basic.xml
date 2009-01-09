@@ -1,0 +1,77 @@
+<!--
+    Ruby, Rails and RHTML snippets for the gedit Snippets plugin
+    http://github.com/colszowka/gedit-snippets/
+
+    gedit-snippets is Copyright (c) 2009 Christoph Olszowka, http://blog.olszowka.de
+-->
+
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+    Basic Rails View helper snippets
+-->
+<snippets language="rhtml">
+  <!--
+      Additional helpers
+  -->
+  <snippet>
+    <text><![CDATA[:confirm => '${1:Are you sure?}'$0]]></text>
+    <tag>confirm</tag>
+    <description>:confirm ... JavaScript confirm message</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:controller => :${1:posts}, :action => :${2:show}, :id => ${3:post}]]></text>
+    <tag>cai</tag>
+    <description>:controller, :action, :id for urls</description>
+  </snippet>
+  
+  <!--
+      Image tags
+  -->
+  <snippet>
+    <text><![CDATA[<%= image_tag '$1' %>$0]]></text>
+    <tag>img</tag>
+    <description>image_tag</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<%= image_tag '$2', :title => "$1" %>$0]]></text>
+    <tag>imgt</tag>
+    <description>image_tag with title</description>
+  </snippet>
+  
+  <!--
+      Javascript and stylesheet include helpers
+  -->
+  <snippet>
+    <text><![CDATA[<%= javascript_include_tag ${1:defaults} %>$0]]></text>
+    <tag>jit</tag>
+    <description>javascript include tag</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<%= stylesheet_link_tag '${1:style}' %>$0]]></text>
+    <tag>slt</tag>
+    <description>stylesheet link tag</description>
+  </snippet>
+  
+  <!--
+      Link tags
+  -->
+  <snippet>
+    <text><![CDATA[<%= link_to '$1', $0 %>]]></text>
+    <tag>lt</tag>
+    <description>link to</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<%= link_to_remote '$1', :url => { $2 }$3 %>$0]]></text>
+    <tag>ltr</tag>
+    <description>link to remote</description>
+  </snippet>
+  
+  <!--
+      Render instructions
+  -->
+  <snippet>
+    <text><![CDATA[<%= render :partial => '${1:item}'$0 %>]]></text>
+    <tag>partial</tag>
+    <description>render :partial ...</description>
+  </snippet>
+</snippets>

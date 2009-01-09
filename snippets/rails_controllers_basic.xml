@@ -1,0 +1,26 @@
+<!--
+    Ruby, Rails and RHTML snippets for the gedit Snippets plugin
+    http://github.com/colszowka/gedit-snippets/
+
+    gedit-snippets is Copyright (c) 2009 Christoph Olszowka, http://blog.olszowka.de
+-->
+
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+    Controller snippets for rails
+-->
+<snippets language="ruby">
+  <!--
+      Before filters
+  -->
+  <snippet>
+    <text><![CDATA[before_filter :${1:method_name}$0]]></text>
+    <tag>bf</tag>
+    <description>before_filter ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:only => [:${1:create, }]]></text>
+    <tag>only</tag>
+    <description>:only => [...] ... before_filter condition</description>
+  </snippet>
+</snippets>

@@ -1,0 +1,217 @@
+<!--
+    Ruby, Rails and RHTML snippets for the gedit Snippets plugin
+    http://github.com/colszowka/gedit-snippets/
+
+    gedit-snippets is Copyright (c) 2009 Christoph Olszowka, http://blog.olszowka.de
+-->
+
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="ruby">
+  <!--
+      Basic class methods
+  -->
+  <snippet>
+    <text><![CDATA[validates_acceptance_of :${1:attribute}$0]]></text>
+    <tag>vao</tag>
+    <description>validates_acceptance_of ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_associated :${1:attribute}$0]]></text>
+    <tag>va</tag>
+    <description>validates_associated ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_confirmation_of :${1:attribute}$0]]></text>
+    <tag>vco</tag>
+    <description>validates_confirmation_of ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_each :${1:attribute} do |record, attr, value|
+  record.errors.add attr, "${2:message}" if $0
+end]]></text>
+    <tag>ve</tag>
+    <description>validates_each ... Validates each attribute against a block</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_exclusion_of :${1:attribute},
+                       :in => $0]]></text>
+    <tag>veo</tag>
+    <description>validates_exclusion_of ... Validates that the value of the specified attribute is not in a particular enumerable object</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_format_of :${1:attribute},
+                    :with$0]]></text>
+    <tag>vfo</tag>
+    <description>validates_format_of ... Validates whether the value of the specified attribute is of the correct form by matching it against the regular expression provided</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_inclusion_of :${1:attribute},
+                       :in$0]]></text>
+    <tag>vio</tag>
+    <description>validates_inclusion_of ... Validates whether the value of the specified attribute is available in a particular enumerable object.</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_length_of :${1:attribute},
+                    :${2:maximum, minimum, is or within}]]></text>
+    <tag>vlo</tag>
+    <description>validates_length_of ... Validates that the specified attribute matches the length restrictions supplied. Only one option can be used at a time</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_numericality_of :${1:attribute}$0]]></text>
+    <tag>vno</tag>
+    <description>validates_numericality_of ... Validates whether the value of the specified attribute is numeric</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[validates_presence_of :${1:attribute}$0]]></text>
+    <tag>vpo</tag>
+    <description>validates_presence_of ... Validates that the specified attributes are not blank</description>
+  </snippet>
+
+  <!--
+      Additional validation exec conditions
+  -->
+  <snippet>
+    <text><![CDATA[:on => :${1:default is save, other options are create or update}$0]]></text>
+    <tag>on</tag>
+    <description>:on ... Specifies when this validation is active (default is :save, other options :create, :update)</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:if => Proc.new {|instance| ${1:some code that checks your instance}$0]]></text>
+    <tag>vifp</tag>
+    <description>:if => Proc.new ... Specifies a proc to call to determine if the validation should occur</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:if => :${1:method_name}]]></text>
+    <tag>vif</tag>
+    <description>:if => :method_name ... Specifies a method to call to determine if the validation should occur</description>
+  </snippet>
+
+  <!--
+      Empty field permission setters
+  -->
+  <snippet>
+    <text><![CDATA[:allow_blank => ${1:false}]]></text>
+    <tag>blank</tag>
+    <description>:allow_blank ... If set to true, skips this validation if the attribute is blank</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:allow_nil => ${1:false}$0]]></text>
+    <tag>vnil</tag>
+    <description>:allow_nil ... Skip validation if attribute is nil</description>
+  </snippet>
+
+  <!--
+      Parameters for custom error messages
+  -->
+  <snippet>
+    <text><![CDATA[:message => "${1:message}"$0]]></text>
+    <tag>msg</tag>
+    <description>:message ... A custom error message</description>
+  </snippet>
+
+  <!-- validates_length_of -->
+  <snippet>
+    <text><![CDATA[:too_long => "${1:value is too long (maximum is %d characters)}"$0]]></text>
+    <tag>tl</tag>
+    <description>:too_long ... The error message if the attribute goes over the maximum for validates_length_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:too_short => "${1:value is too short (minimum is %d characters)}"$0]]></text>
+    <tag>ts</tag>
+    <description>:too_short ... The error message if the attribute goes under the minimum for validates_length_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:wrong_length => "${1:value has wrong length (should be %d characters)}"$0]]></text>
+    <tag>wl</tag>
+    <description>:wrong_length ... The error message if using the :is method and the attribute is the wrong size for validates_length_of</description>
+  </snippet>
+
+  <!--
+      Additional parameters for certain validations
+  -->
+  <!-- validates_acceptance_of -->
+  <snippet>
+    <text><![CDATA[:accept => "${1:1}"$0]]></text>
+    <tag>accept</tag>
+    <description>:accept ... Specifies value that is considered accepted. The default value is a string "1" for validates_acceptance_of</description>
+  </snippet>
+
+  <!-- validates_format_of -->
+  <snippet>
+    <text><![CDATA[:with => /^${1:regexp}\$/$0]]></text>
+    <tag>with</tag>
+    <description>:with ... The regular expression used to validate the format with for validates_format_of</description>
+  </snippet>
+
+  <!-- validates_inclusion/exclusion_of -->
+  <snippet>
+    <text><![CDATA[:in => $0]]></text>
+    <tag>in</tag>
+    <description>:in ... Specify an enumerable object of available items validates_inclusion/exclusion_of</description>
+  </snippet>
+
+  <!-- validates_length_of -->
+  <snippet>
+    <text><![CDATA[:is => ${1:12}]]></text>
+    <tag>is</tag>
+    <description>:is ... The exact size of the attribute for validates_length_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:maximum => ${1:12}]]></text>
+    <tag>max</tag>
+    <description>:maximum ... Specifies the maximum value for validates_length_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:minimum => ${1:12}]]></text>
+    <tag>min</tag>
+    <description>:minimum ... Specifies the minimum value for validates_length_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:within => (${1:12}..${2:15})$0]]></text>
+    <tag>within</tag>
+    <description>:within ... A range specifying the minimum and maximum size of the attribute for validates_length_of</description>
+  </snippet>
+
+  <!-- validates_numericality_of -->
+  <snippet>
+    <text><![CDATA[:only_integer => ${1:true}$0]]></text>
+    <tag>oi</tag>
+    <description>:only_integer for validates_numericality</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:greater_than => ${1:5}$0]]></text>
+    <tag>gt</tag>
+    <description>:greater_than ... Specifies the value must be greater than the supplied value for validates_numericality_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:greater_than_or_equal_to => ${1:5}$0]]></text>
+    <tag>gtet</tag>
+    <description>:greater_than_or_equal_to ... Specifies the value must be greater than or equal the supplied value for validates_numericality_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:equal_to => ${1:5}$0]]></text>
+    <tag>et</tag>
+    <description>:equal_to ... Specifies the value must be equal to the supplied value for validates_numericality_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:less_than => ${1:5}$0]]></text>
+    <tag>lt</tag>
+    <description>:less_than ... Specifies the value must be less than the supplied value for validates_numericality_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:less_than_or_equal_to => ${1:5}$0]]></text>
+    <tag>ltet</tag>
+    <description>:less_than_or_equal_to ... Specifies the value must be less than or equal the supplied value for validates_numericality_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:odd => true]]></text>
+    <tag>odd</tag>
+    <description>:odd ... Specifies the value must be an odd number for validates_numericality_of</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:even => true]]></text>
+    <tag>even</tag>
+    <description>:even ... Specifies the value must be an even number for validates_numericality_of</description>
+  </snippet>
+</snippets>
+

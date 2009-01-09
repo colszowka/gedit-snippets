@@ -1,0 +1,41 @@
+<!--
+    Ruby, Rails and RHTML snippets for the gedit Snippets plugin
+    http://github.com/colszowka/gedit-snippets/
+
+    gedit-snippets is Copyright (c) 2009 Christoph Olszowka, http://blog.olszowka.de
+-->
+
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+    Active Record association helpers
+-->
+<snippets language="ruby">
+  <!--
+      Basic class methods
+  -->
+  <snippet>
+    <text><![CDATA[belongs_to :${1:category}$0]]></text>
+    <tag>bt</tag>
+    <description>belongs_to ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[has_one :${1:article}$0]]></text>
+    <tag>ho</tag>
+    <description>has_one ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[has_many :${1:comments}$0]]></text>
+    <tag>hm</tag>
+    <description>has_many ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[has_and_belongs_to_many :${1:roles}$0]]></text>
+    <tag>habtm</tag>
+    <description>has_and_belongs_to_many ...</description>
+  </snippet>
+  
+  <!--
+      Association modifiers
+  -->
+  <!-- TODO: Currently not implemented since the : hash key=>value snippet does it's job here pretty well' -->
+</snippets>
