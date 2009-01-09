@@ -50,6 +50,7 @@ puts snippets.map {|section, snips| "* " + section}.sort.join("\n")
 # Generate the HTML with a little help from haml and sass
 File.open(File.join(File.dirname(__FILE__), '..', 'cheatsheet.html'), "w+") do |file|
   haml = Haml::Engine.new(File.read(File.join(File.dirname(__FILE__), 'documentation_template.haml')))
-  css = Sass::Engine.new(File.read(File.join(File.dirname(__FILE__), 'documentation_stylesheet.sass')))
-  file.puts haml.render(Object.new, :snippets => snippets, :css => css.render)
+  css_screen = Sass::Engine.new(File.read(File.join(File.dirname(__FILE__), 'documentation_stylesheet.sass')))
+  css_print = Sass::Engine.new(File.read(File.join(File.dirname(__FILE__), 'documentation_stylesheet_print.sass')))
+  file.puts haml.render(Object.new, :snippets => snippets, :css_screen => css_screen.render, :css_print => css_print.render)
 end
