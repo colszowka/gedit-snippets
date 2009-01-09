@@ -2,6 +2,21 @@ h1. gedit-snippets
 
 _Ruby, Rails and RHTML snippets for the gedit Snippets plugin_
 
-h1. Copyright
+This is a collection of code snippets that I am using in my favorite editor, "gedit":gedit.
+
+h2. Install
+
+The snippets are meant to replace those that come bundled with the Snippets plugin entirely, as some of them use the same keywords and will make a popup-select window appear if you do not remove the default ones.
+
+On a default install, the snippets will be stored in <code>/usr/share/gedit-2/plugins/snippets/ruby.xml</code>, so to remove them, do a
+
+<pre>
+sudo rm /usr/share/gedit-2/plugins/snippets/ruby.xml
+</pre>
+
+h2. Copyright
 
 _gedit-snippets_ is Copyright (C) 2009 Christoph Olszowka, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file. 
+
+
+[gedit]http://projects.gnome.org/gedit/
