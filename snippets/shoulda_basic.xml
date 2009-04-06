@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+    Basic snippets for shoulda ruby testing framework
+    http://dev.thoughtbot.com/shoulda/
+-->
+<snippets language="ruby">
+  <snippet>
+    <text><![CDATA[context "${1:Name}" do
+	$0
+end]]></text>
+    <tag>context</tag>
+    <description>context "xyz" do ... end</description>
+  </snippet>
+  
+  <snippet>
+    <text><![CDATA[setup do
+	$0
+end]]></text>
+    <tag>setup</tag>
+    <description>setup do ... end</description>
+  </snippet>
+</snippets>

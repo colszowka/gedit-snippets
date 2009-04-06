@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+    Basic snippets for shoulda ruby testing framework activerecord macros
+    http://dev.thoughtbot.com/shoulda/
+-->
+<snippets language="ruby">
+  <!--
+      General test macros
+  -->
+  <snippet>
+    <text><![CDATA[should_allow_mass_assignment_of :${1:attributes}$0]]></text>
+    <tag>samao</tag>
+    <description>should_allow_mass_assignment_of ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_not_allow_mass_assignment_of :${1:attributes}$0]]></text>
+    <tag>snamao</tag>
+    <description>should_not_allow_mass_assignment_of ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_class_methods :${1:attributes}$0]]></text>
+    <tag>shcm</tag>
+    <description>should_have_class_methods ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_instance_methods :${1:attributes}$0]]></text>
+    <tag>shim</tag>
+    <description>should_have_instance_methods ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_db_columns :${1:attributes}$0]]></text>
+    <tag>shdc</tag>
+    <description>should_have_db_columns ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_index :${1:attributes}$0]]></text>
+    <tag>shi</tag>
+    <description>should_have_index ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_named_scope :${1:scope_call}, $0]]></text>
+    <tag>shns</tag>
+    <description>should_have_named_scope ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_readonly_methods :${1:attributes}$0]]></text>
+    <tag>shrm</tag>
+    <description>should_have_readonly_methods ...</description>
+  </snippet>
+  <!--
+      Association test macros
+  -->
+  <snippet>
+    <text><![CDATA[should_belong_to :${1:associations}$0]]></text>
+    <tag>sbt</tag>
+    <description>should_belong_to ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_many :${1:associations}$0]]></text>
+    <tag>shm</tag>
+    <description>should_have_many ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_one :${1:associations}$0]]></text>
+    <tag>sho</tag>
+    <description>should_have_one ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_have_and_belong_to_many :${1:associations}$0]]></text>
+    <tag>shabtm</tag>
+    <description>should_have_and_belong_to_many ...</description>
+  </snippet>
+  
+  <!--
+      Validation test macros
+  -->
+  <snippet>
+    <text><![CDATA[should_allow_values_for :${1:attribute}, ${2:values}$0]]></text>
+    <tag>savf</tag>
+    <description>should_allow_values_for ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_not_allow_values_for :${1:attribute}, ${2:values}$0]]></text>
+    <tag>snavf</tag>
+    <description>should_not_allow_values_for ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_ensure_length_at_least :${1:attribute}, ${2:minimum_length}$0]]></text>
+    <tag>selal</tag>
+    <description>should_ensure_length_at_least ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_ensure_length_in_range :${1:attribute}, (${2:minimum_length}..${3:maximum_length})$0]]></text>
+    <tag>selir</tag>
+    <description>should_ensure_length_in_range ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_ensure_length_is :${1:attribute}, ${2:length}$0]]></text>
+    <tag>seli</tag>
+    <description>should_ensure_length_is ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_ensure_value_in_range :${1:attribute}, (${2:minimum_length}..${3:maximum_length})$0]]></text>
+    <tag>sevir</tag>
+    <description>should_ensure_value_in_range ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_validate_acceptance_of :${1:attributes}$0]]></text>
+    <tag>svao</tag>
+    <description>should_validate_acceptance_of ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_validate_numericality_of :${1:attributes}$0]]></text>
+    <tag>svno</tag>
+    <description>should_validate_numericality_of ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_validate_presence_of :${1:attributes}$0]]></text>
+    <tag>svpo</tag>
+    <description>should_validate_presence_of ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_validate_uniqueness_of :${1:attributes}, :scoped_to => ${2:field to scope uniq check}$0]]></text>
+    <tag>svuo</tag>
+    <description>should_validate_uniqueness_of ...</description>
+  </snippet>
+</snippets>

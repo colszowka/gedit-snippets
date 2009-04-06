@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+    Basic snippets for shoulda ruby testing framework actioncontroller macros
+    http://dev.thoughtbot.com/shoulda/
+-->
+<snippets language="ruby">
+  <snippet>
+    <text><![CDATA[should_assign_to ${1:attribute}$0]]></text>
+    <tag>sat</tag>
+    <description>should_assign_to ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_filter_params ${1:attribute}$0]]></text>
+    <tag>sfp</tag>
+    <description>should_filter_params ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_not_assign_to ${1:attribute}$0]]></text>
+    <tag>snat</tag>
+    <description>should_not_assign_to ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_not_set_the_flash$0]]></text>
+    <tag>snstf</tag>
+    <description>should_not_set_the_flash</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_redirect_to('${1:description}') { $0 }]]></text>
+    <tag>srt</tag>
+    <description>should_redirect_to ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_render_template ${1:template}$0]]></text>
+    <tag>srt</tag>
+    <description>should_render_template ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_render_with_layout ${1:layout}$0]]></text>
+    <tag>srwl</tag>
+    <description>should_render_with_layout ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_render_without_layout ${1:layout}$0]]></text>
+    <tag>srwl</tag>
+    <description>should_render_without_layout ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_respond_with ${1:status}$0]]></text>
+    <tag>srw</tag>
+    <description>should_respond_with ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_respond_with_content_type ${1:content_type_or_regexp}$0]]></text>
+    <tag>srwct</tag>
+    <description>should_respond_with_content_type ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_route :${1:get}, "${$2:path}", $0]]></text>
+    <tag>sr</tag>
+    <description>should_route ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_set_session('${1:key}') { $0 }]]></text>
+    <tag>sss</tag>
+    <description>should_set_session ...</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[should_set_the_flash_to ${1:string_or_regexp}$0]]></text>
+    <tag>sstft</tag>
+    <description>should_set_the_flash_to ...</description>
+  </snippet>
+
+</snippets>

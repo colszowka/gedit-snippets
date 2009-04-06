@@ -261,6 +261,15 @@
           <a href='#Ruby Collections'>Ruby Collections</a>
         </li>
         <li>
+          <a href='#Shoulda Actioncontroller'>Shoulda Actioncontroller</a>
+        </li>
+        <li>
+          <a href='#Shoulda Activerecord'>Shoulda Activerecord</a>
+        </li>
+        <li>
+          <a href='#Shoulda Basic'>Shoulda Basic</a>
+        </li>
+        <li>
           <a href='#Snippet Tools'>Snippet Tools</a>
         </li>
       </ul>
@@ -1021,6 +1030,240 @@
       </div>
     </div>
     <div class='section'>
+      <a name='Shoulda Actioncontroller'>      </a>
+      <h2>Shoulda Actioncontroller</h2>
+      <div class='snippet'>
+        <h4>sat - should_assign_to ...</h4>
+        <div class='code'>
+          <pre>should_assign_to <span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>sfp - should_filter_params ...</h4>
+        <div class='code'>
+          <pre>should_filter_params <span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>snat - should_not_assign_to ...</h4>
+        <div class='code'>
+          <pre>should_not_assign_to <span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>snstf - should_not_set_the_flash</h4>
+        <div class='code'>
+          <pre>should_not_set_the_flash<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>srt - should_redirect_to ...</h4>
+        <div class='code'>
+          <pre>should_redirect_to(<span class="s"><span class="dl">'</span><span class="k">${1:description}</span><span class="dl">'</span></span>) { <span class="gv">$0</span> }</pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>srt - should_render_template ...</h4>
+        <div class='code'>
+          <pre>should_render_template <span class="er">$</span>{<span class="i">1</span><span class="sy">:template</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>srwl - should_render_with_layout ...</h4>
+        <div class='code'>
+          <pre>should_render_with_layout <span class="er">$</span>{<span class="i">1</span><span class="sy">:layout</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>srwl - should_render_without_layout ...</h4>
+        <div class='code'>
+          <pre>should_render_without_layout <span class="er">$</span>{<span class="i">1</span><span class="sy">:layout</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>srw - should_respond_with ...</h4>
+        <div class='code'>
+          <pre>should_respond_with <span class="er">$</span>{<span class="i">1</span><span class="sy">:status</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>srwct - should_respond_with_content_type ...</h4>
+        <div class='code'>
+          <pre>should_respond_with_content_type <span class="er">$</span>{<span class="i">1</span><span class="sy">:content_type_or_regexp</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>sr - should_route ...</h4>
+        <div class='code'>
+          <pre>should_route :<span class="er">$</span>{<span class="i">1</span><span class="sy">:get</span>}, <span class="s"><span class="dl">&quot;</span><span class="k">${$2:path}</span><span class="dl">&quot;</span></span>, <span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>sss - should_set_session ...</h4>
+        <div class='code'>
+          <pre>should_set_session(<span class="s"><span class="dl">'</span><span class="k">${1:key}</span><span class="dl">'</span></span>) { <span class="gv">$0</span> }</pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>sstft - should_set_the_flash_to ...</h4>
+        <div class='code'>
+          <pre>should_set_the_flash_to <span class="er">$</span>{<span class="i">1</span><span class="sy">:string_or_regexp</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+    </div>
+    <div class='section'>
+      <a name='Shoulda Activerecord'>      </a>
+      <h2>Shoulda Activerecord</h2>
+      <div class='snippet'>
+        <h4>samao - should_allow_mass_assignment_of ...</h4>
+        <div class='code'>
+          <pre>should_allow_mass_assignment_of :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>snamao - should_not_allow_mass_assignment_of ...</h4>
+        <div class='code'>
+          <pre>should_not_allow_mass_assignment_of :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shcm - should_have_class_methods ...</h4>
+        <div class='code'>
+          <pre>should_have_class_methods :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shim - should_have_instance_methods ...</h4>
+        <div class='code'>
+          <pre>should_have_instance_methods :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shdc - should_have_db_columns ...</h4>
+        <div class='code'>
+          <pre>should_have_db_columns :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shi - should_have_index ...</h4>
+        <div class='code'>
+          <pre>should_have_index :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shns - should_have_named_scope ...</h4>
+        <div class='code'>
+          <pre>should_have_named_scope :<span class="er">$</span>{<span class="i">1</span><span class="sy">:scope_call</span>}, <span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shrm - should_have_readonly_methods ...</h4>
+        <div class='code'>
+          <pre>should_have_readonly_methods :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>sbt - should_belong_to ...</h4>
+        <div class='code'>
+          <pre>should_belong_to :<span class="er">$</span>{<span class="i">1</span><span class="sy">:associations</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shm - should_have_many ...</h4>
+        <div class='code'>
+          <pre>should_have_many :<span class="er">$</span>{<span class="i">1</span><span class="sy">:associations</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>sho - should_have_one ...</h4>
+        <div class='code'>
+          <pre>should_have_one :<span class="er">$</span>{<span class="i">1</span><span class="sy">:associations</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>shabtm - should_have_and_belong_to_many ...</h4>
+        <div class='code'>
+          <pre>should_have_and_belong_to_many :<span class="er">$</span>{<span class="i">1</span><span class="sy">:associations</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>savf - should_allow_values_for ...</h4>
+        <div class='code'>
+          <pre>should_allow_values_for :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}, <span class="er">$</span>{<span class="i">2</span><span class="sy">:values</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>snavf - should_not_allow_values_for ...</h4>
+        <div class='code'>
+          <pre>should_not_allow_values_for :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}, <span class="er">$</span>{<span class="i">2</span><span class="sy">:values</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>selal - should_ensure_length_at_least ...</h4>
+        <div class='code'>
+          <pre>should_ensure_length_at_least :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}, <span class="er">$</span>{<span class="i">2</span><span class="sy">:minimum_length</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>selir - should_ensure_length_in_range ...</h4>
+        <div class='code'>
+          <pre>should_ensure_length_in_range :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}, (<span class="er">$</span>{<span class="i">2</span><span class="sy">:minimum_length</span>}..<span class="er">$</span>{<span class="i">3</span><span class="sy">:maximum_length</span>})<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>seli - should_ensure_length_is ...</h4>
+        <div class='code'>
+          <pre>should_ensure_length_is :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}, <span class="er">$</span>{<span class="i">2</span><span class="sy">:length</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>sevir - should_ensure_value_in_range ...</h4>
+        <div class='code'>
+          <pre>should_ensure_value_in_range :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attribute</span>}, (<span class="er">$</span>{<span class="i">2</span><span class="sy">:minimum_length</span>}..<span class="er">$</span>{<span class="i">3</span><span class="sy">:maximum_length</span>})<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>svao - should_validate_acceptance_of ...</h4>
+        <div class='code'>
+          <pre>should_validate_acceptance_of :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>svno - should_validate_numericality_of ...</h4>
+        <div class='code'>
+          <pre>should_validate_numericality_of :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>svpo - should_validate_presence_of ...</h4>
+        <div class='code'>
+          <pre>should_validate_presence_of :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>svuo - should_validate_uniqueness_of ...</h4>
+        <div class='code'>
+          <pre>should_validate_uniqueness_of :<span class="er">$</span>{<span class="i">1</span><span class="sy">:attributes</span>}, <span class="sy">:scoped_to</span> =&gt; <span class="er">$</span>{<span class="i">2</span><span class="sy">:field</span> to scope uniq check}<span class="gv">$0</span></pre>
+        </div>
+      </div>
+    </div>
+    <div class='section'>
+      <a name='Shoulda Basic'>      </a>
+      <h2>Shoulda Basic</h2>
+      <div class='snippet'>
+        <h4>context - context "xyz" do ... end</h4>
+        <div class='code'>
+          <pre>context <span class="s"><span class="dl">&quot;</span><span class="k">${1:Name}</span><span class="dl">&quot;</span></span> <span class="r">do</span>&#x000A;        <span class="gv">$0</span>&#x000A;<span class="r">end</span></pre>
+        </div>
+      </div>
+      <div class='snippet'>
+        <h4>setup - setup do ... end</h4>
+        <div class='code'>
+          <pre>setup <span class="r">do</span>&#x000A;        <span class="gv">$0</span>&#x000A;<span class="r">end</span></pre>
+        </div>
+      </div>
+    </div>
+    <div class='section'>
       <a name='Snippet Tools'>      </a>
       <h2>Snippet Tools</h2>
       <div class='snippet'>
@@ -1051,7 +1294,7 @@
     <div id='footer'>
       <p><code>gedit-snippets</code> is Copyright (C) 2009 Christoph Olszowka <christoph at olszowka dot de>, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.</p>
       <p>You can find the project on <a href="http://github.com/colszowka/gedit-snippets">github</a> and on my <a href="http://blog.olszowka.de">blog</a></p>
-      <p>This documentation generated on Mon Apr 06 02:08:31 +0200 2009</p>
+      <p>This documentation generated on Mon Apr 06 15:37:13 +0200 2009</p>
     </div>
   </body>
 </html>
