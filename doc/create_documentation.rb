@@ -5,7 +5,7 @@
 # http://github.com/colszowka/gedit-snippets/
 #
 # gedit-snippets is Copyright (c) 2009 Christoph Olszowka, http://blog.olszowka.de
-
+require 'rubygems'
 require 'xmlsimple'
 require 'cgi'
 require 'haml'
